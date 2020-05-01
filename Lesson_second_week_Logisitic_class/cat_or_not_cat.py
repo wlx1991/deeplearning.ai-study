@@ -46,7 +46,7 @@ def optimize(W,b,X,Y,num_iteration,learning_rate,print_cost = False):
         db = grads['db']
         W = W - learning_rate*dw
         b = b - learning_rate*db
-        ##
+        #
         if i % 100 == 0:
             costs.append(cost)
         if print_cost and i % 100 == 0:
